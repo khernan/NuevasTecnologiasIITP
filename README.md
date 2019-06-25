@@ -1,4 +1,4 @@
-# movie-app
+# Bicicletas-app
 
 ## Project setup
 ```
