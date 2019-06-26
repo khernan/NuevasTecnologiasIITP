@@ -23,7 +23,7 @@
             <div>
               <h2 class="headline mb-0">{{singleObjeto.name}}- Pais: {{singleObjeto.location.country}}</h2>
               <p>Ciudad: {{ singleObjeto.location.city}} </p>
-              <label>Queres comprarla? fijate en que lugar de {{ singleObjeto.location.city}} se vende! </label><a target="_blank" :href="`https://www.google.com/maps/search/google/@${singleObjeto.location.latitude},${singleObjeto.location.longitude}`">Google maps</a>
+              <label>Queres comprarla? fijate en que lugar de {{ singleObjeto.location.city}} se vende! </label><a target="_blank" :href="`https://maps.google.com/?q=${singleObjeto.location.latitude},${singleObjeto.location.longitude}`">Google maps</a>
             </div>
           </v-card-title>
           <v-card-actions>
