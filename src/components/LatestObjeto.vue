@@ -14,7 +14,7 @@
   <v-container v-else grid-list-xl>
     <v-layout wrap>
       <v-flex xs4
-        v-for="(item, index) in objetosResponse.networks"
+        v-for="(item, index) in objetosResponse.networks.slice(0,40)"
         :key="index"
         mb-2>
         <v-card>
