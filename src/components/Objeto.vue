@@ -39,12 +39,6 @@
         <v-dialog
           v-model="dialog"
           width="500">
-          <v-btn
-            slot="activator"
-            color="green"
-            dark>
-            View Ratings
-          </v-btn>
           <v-card>
             <v-card-title
               class="headline grey lighten-2"
