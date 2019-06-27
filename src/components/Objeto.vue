@@ -16,16 +16,16 @@
       <v-flex xs12 mr-1 ml-1>
         <v-card>
           <v-img
-            :src="singleObjeto.poster"
+            :src="objetos.poster"
             aspect-ratio="2"
           ></v-img>
           <v-card-title primary-title>
             <div>
-              <h2 class="headline mb-0">{{singleObjeto.tipo}} - {{singleObjeto.marca}}
-               - {{ singleObjeto.modelo}} - Sn:{{singleObjeto.serial}} </h2>
+              <h2 class="headline mb-0">{{objetos.tipo}} - {{objetos.marca}}
+               - {{ objetos.modelo}} - Sn:{{objetos.serial}} </h2>
               <div style="margin-top:10px">
-              <label>Queres ver donde esta? fijate en que lugar de {{ singleObjeto.Ciudad}} se vende! </label><a target="_blank" :href="`https://maps.google.com/?q=${singleObjeto.latitude},${singleObjeto.longitude}`">Google maps</a>
-              <p>{{singleObjeto.descripcion}}</p>
+              <label>Queres ver donde esta? fijate en que lugar de {{ objetos.Ciudad}} se vende! </label><a target="_blank" :href="`https://maps.google.com/?q=${objetos.latitude},${objetos.longitude}`">Google maps</a>
+              <p>{{objetos.descripcion}}</p>
             </div>
             </div>
           </v-card-title>
@@ -44,7 +44,7 @@ export default {
 
   data () {
     return {
-      singleObjeto: '',
+      objetos: '',
       dialog: false,
       loading: true
     }
@@ -54,8 +54,7 @@ export default {
     objetoApi.fetchSingleObjeto(this.id)
       .then(response => {
         const selected = response.objetos.find(elem => parseInt(elem.id) === parseInt(this.id))
-        console.log(selected)
-        this.singleObjeto = selected
+        this.objetos = selected
         this.loading = false
       })
       .catch(error => {

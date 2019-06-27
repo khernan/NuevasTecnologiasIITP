@@ -14,7 +14,7 @@
   <v-container v-else grid-list-xl>
     <v-layout wrap>
       <v-flex xs4
-        v-for="item in objetosResponse.objetos"
+        v-for="item in objetos"
         v-bind:key="item.id"
         mb-2>
         <v-card>
@@ -51,14 +51,14 @@ import objetoApi from '@/services/objetoApi'
 export default {
   data () {
     return {
-      objetosResponse: [],
+      objetos: [],
       loading: true
     }
   },
   mounted () {
     objetoApi.fetchObjetoCollection()
       .then(response => {
-        this.objetosResponse = response
+        this.objetos = response.objetos
         this.loading = false
       })
       .catch(error => {
