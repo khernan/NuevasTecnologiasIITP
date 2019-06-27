@@ -21,9 +21,12 @@
           ></v-img>
           <v-card-title primary-title>
             <div>
-              <h2 class="headline mb-0">{{singleObjeto.tipo}}- Marca: {{singleObjeto.marca}}</h2>
-              <p>Modelo: {{ singleObjeto.modelo}} </p>
-              <!-- //<label>Queres comprarla? fijate en que lugar de {{ singleObjeto.location.city}} se vende! </label><a target="_blank" :href="`https://maps.google.com/?q=${singleObjeto.location.latitude},${singleObjeto.location.longitude}`">Google maps</a> -->
+              <h2 class="headline mb-0">{{singleObjeto.tipo}} - {{singleObjeto.marca}}
+               - {{ singleObjeto.modelo}} - Sn:{{singleObjeto.serial}} </h2>
+              <div style="margin-top:10px">
+              <label>Queres ver donde esta? fijate en que lugar de {{ singleObjeto.Ciudad}} se vende! </label><a target="_blank" :href="`https://maps.google.com/?q=${singleObjeto.latitude},${singleObjeto.longitude}`">Google maps</a>
+              <p>{{singleObjeto.descripcion}}</p>
+            </div>
             </div>
           </v-card-title>
           <v-card-actions>

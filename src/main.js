@@ -6,7 +6,7 @@ import router from './router'
 import axios from 'axios'
 
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'https://demo5245653.mockable.io/'
+axios.defaults.baseURL = 'https://demo1230929.mockable.io/'
 
 // 'https://api.citybik.es/v2/networks?fields=id,name,location'
 
