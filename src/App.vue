@@ -6,13 +6,13 @@
         to='/'
         tag='span'
         style='cursor: pointer'>
-        Bicicletas ORT
+        Esmio
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-flex xs12 sm6 md3>
         <v-text-field
-          label='Busca tu bici!'
+          label='Busca tus cosas!'
           v-model='searchString'
           >
         </v-text-field>

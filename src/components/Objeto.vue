@@ -15,15 +15,18 @@
     <v-layout wrap>
       <v-flex xs12 mr-1 ml-1>
         <v-card>
-          <!-- <v-img
-            :src="singleObjeto.Poster"
+          <v-img
+            :src="objetos.poster"
             aspect-ratio="2"
-          ></v-img> -->
+          ></v-img>
           <v-card-title primary-title>
             <div>
-              <h2 class="headline mb-0">{{singleObjeto.name}}- Pais: {{singleObjeto.location.country}}</h2>
-              <p>Ciudad: {{ singleObjeto.location.city}} </p>
-              <label>Queres comprarla? fijate en que lugar de {{ singleObjeto.location.city}} se vende! </label><a target="_blank" :href="`https://maps.google.com/?q=${singleObjeto.location.latitude},${singleObjeto.location.longitude}`">Google maps</a>
+              <h2 class="headline mb-0">{{objetos.tipo}} - {{objetos.marca}}
+               - {{ objetos.modelo}} - Sn:{{objetos.serial}} </h2>
+              <div style="margin-top:10px">
+              <label>Queres ver donde esta? fijate en que lugar de {{ objetos.Ciudad}} se vende! </label><a target="_blank" :href="`https://maps.google.com/?q=${objetos.latitude},${objetos.longitude}`">Google maps</a>
+              <p>{{objetos.descripcion}}</p>
+            </div>
             </div>
           </v-card-title>
           <v-card-actions>
@@ -41,7 +44,7 @@ export default {
 
   data () {
     return {
-      singleObjeto: '',
+      objetos: '',
       dialog: false,
       loading: true
     }
@@ -50,8 +53,8 @@ export default {
   mounted () {
     objetoApi.fetchSingleObjeto(this.id)
       .then(response => {
-        const selected = response.networks.find(elem => elem.id === this.id)
-        this.singleObjeto = selected
+        const selected = response.objetos.find(elem => parseInt(elem.id) === parseInt(this.id))
+        this.objetos = selected
         this.loading = false
       })
       .catch(error => {

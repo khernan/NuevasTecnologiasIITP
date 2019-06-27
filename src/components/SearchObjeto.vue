@@ -13,29 +13,34 @@
 
   <v-container v-else-if="noData">
     <div class="text-xs-center">
-    <h2>No se encontraron bicicletas con el nombre {{this.name}}</h2>
+    <h2>No se encontraron objetos el nombre {{this.marca}}</h2>
     </div>
   </v-container>
 
   <v-container v-else grid-list-xl>
     <v-layout wrap>
       <v-flex xs4
-      v-for="(item, index) in objetoResponse"
-        :key="index"
+       v-for="item in objetos"
+        v-bind:key="item.id"
         mb-2>
-        >
         <v-card>
+           <v-img
+            :src="item.poster"
+            aspect-ratio="1"
+          ></v-img>
           <v-card-title primary-title>
             <div>
-              <h2>Tipo de bicicleta: {{objetoResponse.id}}</h2>
-               <h2>Modelo: {{objetoResponse.name}}</h2>
+              <h2>Tipo: {{item.tipo}}</h2>
+               <h2>Modelo: {{item.modelo}}</h2>
+                <h2>Marca: {{item.marca}}</h2>
+               <h2>Serial: {{item.serial}}</h2>
             </div>
           </v-card-title>
 
           <v-card-actions class="justify-center">
             <v-btn flat
               color="green"
-               @click="singleObjeto(objetoResponse.id)"
+               @click="singleObjeto(item.id)"
               >Ver Bici</v-btn>
           </v-card-actions>
 
@@ -50,10 +55,10 @@ import objetoApi from '@/services/objetoApi'
 import App from '../App'
 export default {
 
-  props: ['name'],
+  props: ['marca'],
   data () {
     return {
-      objetoResponse: [],
+      objetos: [],
       loading: true,
       noData: false
     }
@@ -66,8 +71,8 @@ export default {
     fetchResult (value) {
       objetoApi.fetchObjetoCollection()
         .then(response => {
-          const found = response.networks.find(elem => elem.name.toUpperCase().includes(value.toUpperCase()))
-          this.objetoResponse = found
+          const found = response.objetos.filter(elem => elem.marca.toUpperCase().includes(value.toUpperCase()))
+          this.objetos = found
           this.loading = false
         })
         .catch(error => {
@@ -79,7 +84,7 @@ export default {
     this.fetchResult(App.searchBike())
   },
   watch: {
-    name (value) {
+    marca (value) {
       this.fetchResult(value)
     }
   }
