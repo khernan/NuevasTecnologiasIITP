@@ -10,7 +10,7 @@ export default {
   },
 
   fetchSingleObjeto (id) {
-    return axios.get('&i=' + id)
+    return axios.get()
       .then(response => {
         return response.data
       })

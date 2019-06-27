@@ -50,7 +50,7 @@ export default {
   mounted () {
     objetoApi.fetchSingleObjeto(this.id)
       .then(response => {
-        const selected = response.objetos.find(elem => elem.id === this.id)
+        const selected = response.objetos.find(elem => parseInt(elem.id) === parseInt(this.id))
         console.log(selected)
         this.singleObjeto = selected
         this.loading = false
