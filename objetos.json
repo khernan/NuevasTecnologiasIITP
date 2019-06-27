@@ -1,0 +1,112 @@
+{"objetos":[
+        {
+            "id": 0,
+            "tipo": "Maquina Escribir",
+            "marca": "olimpya",
+            "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrk38bEYj98chxSKRH0n8eUxF5uZ0T2s3fCe6snUq8uUT13HMkDg",
+            "modelo": "cs3",
+            "serial": "2521135",
+            "latitude": "43.6100006",
+            "longitude": "3.8041219",
+            "descripcion": "Para coleccionistas. Modelo clásico en portátiles Olivetti.Se traba al marcar una tecla (se enciende shift lock). Puede ser tema de configuración o cartucho de cinta porque no ha sufrido golpe alguno y en lo demás (funciones del teclado) funciona",
+            "Ciudad" : "Montpellier"
+        },
+        {
+            "id": 1,
+            "tipo": "Maquina Escribir",
+            "marca": "olivetti",
+            "poster": "https://i.etsystatic.com/8429430/r/il/ff2485/1176493000/il_794xN.1176493000_qw35.jpg",
+            "modelo": "ico",
+            "serial": "2523366",
+            "latitude": "48.8587741",
+            "longitude": "-2.2069771",
+            "descripcion": "Para coleccionistas. Modelo clásico en portátiles Olivetti.Se traba al marcar una tecla (se enciende shift lock). Puede ser tema de configuración o cartucho de cinta porque no ha sufrido golpe alguno y en lo demás (funciones del teclado) funciona",
+            "Ciudad" : "Paris"
+        },
+        {
+            "id": 2,
+            "tipo": "Bicicleta",
+            "marca": "Legnano",
+            "poster": "https://www.bricklanebikes.co.uk/images/thumbs/0020143_legnano-road-bike-blue_625.jpeg",
+            "modelo": "Invictus",
+            "serial": "56876444",
+             "latitude": "-34.6158037",
+            "longitude": "-58.5033383",
+            "descripcion": "Para coleccionistas. Modelo clásico en portátiles Olivetti.Se traba al marcar una tecla (se enciende shift lock). Puede ser tema de configuración o cartucho de cinta porque no ha sufrido golpe alguno y en lo demás (funciones del teclado) funciona",
+            "Ciudad" : "Buenos Aires"
+        },
+        {
+            "id": 3,
+            "tipo": "Maquina Escribir",
+            "marca": "olivetti",
+            "poster": "https://i.etsystatic.com/6100598/r/il/a89304/1792160030/il_794xN.1792160030_5p1e.jpg",
+            "modelo": "lettera22",
+            "serial": "78987987",
+            "latitude": "-34644968",
+            "longitude": "-58436479",
+            "descripcion" :"Para coleccionistas. Modelo clásico en portátiles Olivetti.Se traba al marcar una tecla (se enciende shift lock). Puede ser tema de configuración o cartucho de cinta porque no ha sufrido golpe alguno y en lo demás (funciones del teclado) funciona",
+            "Ciudad" : "Buenos Aires"
+        },
+        {
+            "id": 4,
+            "tipo": "Maquina Escribir",
+            "marca": "hermes",
+            "poster": "http://mytypewriter.com/ProductImages/HE_Port_feather_M.jpg",
+            "modelo": "featherweight",
+            "serial": "2524453",
+               "latitude": "-34.6158037",
+            "longitude": "-58.5033383",
+            "descripcion": "Para coleccionistas. Modelo clásico en portátiles Olivetti.Se traba al marcar una tecla (se enciende shift lock). Puede ser tema de configuración o cartucho de cinta porque no ha sufrido golpe alguno y en lo demás (funciones del teclado) funciona",
+            "Ciudad" : "Buenos Aires"
+        },
+        {
+            "id": 5,
+            "tipo": "Maquina Escribir",
+            "marca": "olivetti",
+            "poster": "https://a.1stdibscdn.com/archivesE/upload/1121189/f_86016231506923981936/8601623_master.jpg?width=768",
+            "modelo": "lettera32",
+            "serial": "2521135",
+               "latitude": "-34.6158037",
+            "longitude": "-58.5033383",
+            "descripcion": "Para coleccionistas. Modelo clásico en portátiles Olivetti.Se traba al marcar una tecla (se enciende shift lock). Puede ser tema de configuración o cartucho de cinta porque no ha sufrido golpe alguno y en lo demás (funciones del teclado) funciona",
+            "Ciudad" : "Buenos Aires"
+        },
+        {
+            "id": 6,
+            "tipo": "bicicleta",
+            "marca": "bianchi",
+            "poster": "https://cdn10.bigcommerce.com/s-44ck0/products/2257/images/19483/BianchiEroica.2__56534.1546726398.1280.1280.jpg?c=2",
+            "modelo": "cs3",
+            "serial": "2521145",
+               "latitude": "-34.6158037",
+            "longitude": "-58.5033383",
+            "descripcion": "Para coleccionistas. Modelo clásico en portátiles Olivetti.Se traba al marcar una tecla (se enciende shift lock). Puede ser tema de configuración o cartucho de cinta porque no ha sufrido golpe alguno y en lo demás (funciones del teclado) funciona",
+            "Ciudad" : "Buenos Aires"
+        },
+        {
+            "id": 7,
+            "tipo": "Maquina Escribir",
+            "marca": "olimpya",
+            "poster": "https://i.etsystatic.com/14581911/r/il/c28723/1844628883/il_794xN.1844628883_4xsp.jpg",
+            "modelo": "cs4",
+            "serial": "2677135",
+               "latitude": "-34.6158037",
+            "longitude": "-58.5033383",
+            "descripcion": "Para coleccionistas. Modelo clásico en portátiles Olivetti.Se traba al marcar una tecla (se enciende shift lock). Puede ser tema de configuración o cartucho de cinta porque no ha sufrido golpe alguno y en lo demás (funciones del teclado) funciona",
+            "Ciudad" : "Buenos Aires"
+        },
+        {
+            "id": 8,
+            "tipo": "bicicleta",
+            "marca": "bianchi",
+            "poster": "https://cdn.shopify.com/s/files/1/1109/6048/products/media_85c69583-4eda-421c-b9f4-dcdfc0a9ea91_1024x1024.jpg?v=1554099523",
+            "modelo": "rotzo",
+            "serial": "256875",
+               "latitude": "-34.6158037",
+            "longitude": "-58.5033383",
+            "descripcion": "Para coleccionistas. Modelo clásico en portátiles Olivetti.Se traba al marcar una tecla (se enciende shift lock). Puede ser tema de configuración o cartucho de cinta porque no ha sufrido golpe alguno y en lo demás (funciones del teclado) funciona",
+            "Ciudad" : "Buenos Aires"
+        }
+]
+ 
+}
